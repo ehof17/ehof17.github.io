@@ -1,0 +1,133 @@
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    /*bringing to center horizontally*/
+    display: flex;
+    /*Makes the items in line vertically*/
+    flex-direction: column;
+    /*Alligns the things in the center horizontally*/
+    align-items: center;
+    /*sets the height to the height of the screen, 100% of it*/
+    height: 100vh;
+    /*brings to center vertically*/
+    justify-content:center;
+    background: url("https://images.unsplash.com/photo-1557652646-c4efca50f2de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    /*covers the background*/
+    background-size: cover;
+    
+
+}
+h2{
+    /*Makes everything capital*/
+    text-transform: uppercase;
+    /*Increase space between letters*/
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align:center;
+}
+.clock{
+    display: flex;
+    
+    letter-spacing: 5px;
+}
+.clock div{
+    /*t make ampm absolute*/
+    margin: 5px;
+    position:relative;
+}
+.clock span{
+    
+    width: 100px;
+    height: 80px;
+    background: slategray;
+    opacity: 0.8;
+    color: white;
+    /*to see the effects of width and height*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /*Horizontal shadow postion, vetical, blur radius, color*/
+    /*rba, opacity at end*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+.clock .text{
+height: 30px;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+background-color: burlywood;
+opacity:.8;
+}
+.day span{
+    
+    position: relative;
+    margin: 4px;
+    
+    color: white;
+    width: 320px;
+    height: 80px;
+    line-height: 80px;
+    background: slategray;
+    opacity: 0.8;
+    color: white;
+   
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    /*Horizontal shadow postion, vetical, blur radius, color*/
+    /*rba, opacity at end*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3)
+
+}
+#numyears{
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    margin-right: 5px;
+    
+    width:100px;
+    float: left;
+    height:80px;
+    
+}
+
+.fact{
+    color: white;
+    
+    width: 430px;
+    height: 80px;
+    background: slategray;
+    opacity:.8;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    /*Horizontal shadow postion, vetical, blur radius, color*/
+    /*rba, opacity at end*/
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3)
+}
+.special{
+text-align: center;
+
+top: 4px;
+display: flex;
+width: 430px;
+color: white;
+height: 30px;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+background-color: burlywood;
+opacity:.8;
+justify-content: center;
+align-items: center;
+text-shadow: 2px 2px 4px rgba(0,0,0,.3)
+}
+
+
+
