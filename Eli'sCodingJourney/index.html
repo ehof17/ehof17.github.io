@@ -71,5 +71,262 @@
               <h4>What the site looks like today</h4>
               <img src = "daytwo.jpg" width="600" 
               height="300" />
+    <div id = daythree>
+      <h3><em>April 5, 2023</em></h3>
+      <iframe width="420" height="315"
+src="https://www.youtube.com/embed/MIhNXrOuX5A">
+</iframe>
+      <p>
+        Today marks day three of my web dev journey. Today's lesson was all about tables. Oh how I wish I could make them turn. I guess I have to wait a few months until I start working with javascript to make my stuff more vibrant. A table is created with a
+        <br>
+        <em>< table ></em>
+        <br>
+        tag, but that doesn't show anything on screen. First, you need to add rows with the
+        <br>
+        <em> < tr ></em>
+        <br>
+        tag. And it doesn't stop there. Once the rows are added you can finally add one or multiple
+        <br>
+        <em> < td > </em>
+        <br>
+        tags and information between them to add data to your table. With this, you can make a simple table like this.
+        <table>
+          <tr>
+            <td>
+              27.2
+            </td>
+            <td>
+              7.5
+            </td>
+            <td>
+              7.3
+            </td>
+          </tr>
+          <tr>
+            <td>
+              30.1
+            </td>
+            <td>
+              6.2
+            </td>
+            <td>
+              5.3
+            </td>
+          </tr>
+          <tr>
+            <td>
+              24.6
+            </td>
+            <td>
+              11.2
+            </td>
+            <td>
+              3.6
+            </td>
+          </tr>
+          </table>
+          <br>
+          Now that's pretty cool... but theres more!. We can add
+          <br>
+          <em> < th > </em>
+          <br>
+          tags (at the beginning) to add a header. The tags still to be inside a  < tr > tag for it to all work out.
+          <br>
+          <table>
+            <tr>
+              <th scope = "col">
+                Points Per Game
+              </th>
+              <th scope = "col">
+                Rebounds Per Game
+              </th>
+              <th scope = "col">
+                Assists Per Game
+              </th>
+            </tr>
+            <tr>
+              <td>
+                27.2
+              </td>
+              <td>
+                7.5
+              </td>
+              <td>
+                7.3
+              </td>
+            </tr>
+            <tr>
+              <td>
+                30.1
+              </td>
+              <td>
+                6.2
+              </td>
+              <td>
+                5.3
+              </td>
+            </tr>
+            <tr>
+              <td>
+                24.6
+              </td>
+              <td>
+                11.2
+              </td>
+              <td>
+                3.6
+              </td>
+            </tr>
+            </table>
+            <br>
+        Its cool that the head gets bolded. Additionally, < th > tags have an attribute "scope". Setting this to "col" or to "row" denotes what the heading is. Let me add some < th > tags with the scope of "row".
+        <br>
+        <table>
+          <tr>
+            <th scope = "col">
+              Points Per Game
+            </th>
+            <th scope = "col">
+              Rebounds Per Game
+            </th>
+            <th scope = "col">
+              Assists Per Game
+            </th>
+          </tr>
+          <tr>
+            <th scope = "row">Lebron James</th>
+            <td>
+              27.2
+            </td>
+            <td>
+              7.5
+            </td>
+            <td>
+              7.3
+            </td>
+          </tr>
+          <tr>
+            <th scope = "row">Michael Jordan</th>
+            <td>
+              30.1
+            </td>
+            <td>
+              6.2
+            </td>
+            <td>
+              5.3
+            </td>
+          </tr>
+          <tr>
+            <th scope = "row">Kareem Abdul-Jabbar</th>
+            <td>
+              24.6
+            </td>
+            <td>
+              11.2
+            </td>
+            <td>
+              3.6
+            </td>
+          </tr>
+          </table>
+          <br>
+          We can see that the data is not alligned. This is because the headers are added to each row besides the first one, and since the first row only had 3 elements, we need to add an element before the first element in the first row.
+          <br>
+          <table>
+            <tr>
+              <td>
+
+              </td>
+              <th scope = "col">
+                Points Per Game
+              </th>
+              <th scope = "col">
+                Rebounds Per Game
+              </th>
+              <th scope = "col">
+                Assists Per Game
+              </th>
+            </tr>
+            <tr>
+              <th scope = "row">Lebron James</th>
+              <td>
+                27.2
+              </td>
+              <td>
+                7.5
+              </td>
+              <td>
+                7.3
+              </td>
+            </tr>
+            <tr>
+              <th scope = "row">Michael Jordan</th>
+              <td>
+                30.1
+              </td>
+              <td>
+                6.2
+              </td>
+              <td>
+                5.3
+              </td>
+            </tr>
+            <tr>
+              <th scope = "row">Kareem Abdul-Jabbar</th>
+              <td>
+                24.6
+              </td>
+              <td>
+                11.2
+              </td>
+              <td>
+                3.6
+              </td>
+            </tr>
+            </table>
+            <br>
+            Much better. The fun with tables doesn't end there though. If data needs to be spanned across multiple rows or columns, you could set the "colspan" or "rowspan" equal to "n" where n is the amount of columns or rows the data needs to be spread across. Here's a table outlining my weekend schedule.
+            <br>
+            <table>
+              <tr> <!-- Row 1 -->
+                <th></th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+              <tr> <!-- Row 2 -->
+                <th>Morning</th>
+                <td rowspan="2">Work</td>
+                <td rowspan="3">Relax</td>
+              </tr>
+              <tr> <!-- Row 3 -->
+                <th>Afternoon</th>
+              </tr>
+              <tr> <!-- Row 4 -->
+                <th>Evening</th>
+                <td>Dinner</td>
+              </tr>
+            </table>
+            <br>
+            The final part of the lesson today regarding tables has to deal with organization. All of the data except for the headers should be surrounded by 
+            <br>
+            <em> < tbody ></em>
+            <br>
+            tags. The header elements should be surrounded by
+            <br>
+            <em> < thead > </em>
+            <br>
+            tags, and info at the end like sums, differences, and other data results inside
+            <br>
+            <em> < tfoot ></em>
+            <br>
+            tags.
+          </p>
+          <h4>What the site looks like today</h4>
+              <img src = "daythree.jpg" width="600" 
+              height="300" />
+
+          </div>
+              
 </body>
 </html>
