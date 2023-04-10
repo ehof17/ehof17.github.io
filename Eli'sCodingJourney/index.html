@@ -327,6 +327,215 @@ src="https://www.youtube.com/embed/MIhNXrOuX5A">
               height="300" />
 
           </div>
+          <div id = dayfour>
+            <h3><em>April 7, 2023</em></h3>
+            <p>Today's lesson was all about forms...excited yet? They are kinda cool. They are used to collect information, but then we gotta send that information somewhere else to be procesed. A form tag must have the loctation of where the information must go, and what HTTP request to make. An example form that sends the information to example.html as a post request goes as follows:
+              <br>
+              <em> < form  action = "/example.html" method = "POST" > < /form > </em>
+              <br>
+              Forms can also include child elements, like headings and paragraphs. We can also use
+              <br>
+              <em> < input > </em>
+              <br>
+              tags to take in input. To take in text, the type of the input element is "text", which is the default for forms. Additonally, the name attribute must be included for the information in the input to be included. An example of this type of form could be:
+              <br>
+              <em> < form action="/example.html" method="POST" ><br>
+                < input type="text" name="first-text-field" ><br>
+              < /form ></em>
+              <br>
+              <form action="/example.html" method="POST">
+                <input type="text" name="first-text-field">
+              </form>
+              To label a form, we can use the<br>
+              <em> < label > </em>
+              <br>
+              open and closing tags with a "for" attribute of the label equal to the id of the input tag. In code it looks like this:
+              <br>
+              <em>
+                < form action="/example.html" method="POST"><br>
+                
+                  < label for="meal"><br>What do you want to eat?</label >
+                  <br>< br ><br>
+                  < input type="text" name="food" id="meal" ><br>
+                < /form >
+              </em>
+              <br>
+              <form action="/example.html" method="POST">
+                <label for="meal">What do you want to eat?</label>
+                <br>
+                <input type="text" name="food" id="meal">
+              </form>
+              <br>
+              Passwords can be used with inputs, all we need to do is set the type of the input to "password" and we get something like this.
+              <br>
+              <form action="/example.html" method="POST">
+                <label for="meal">Enter your password</label>
+                <br>
+                <input type="password" name="food" id="meal">
+                <br>
+                Additonally, the type of input can be "number" and set the "step" attribute to whatever number. Heres a form with an number input and step of 7.
+                <br>
+                <form action="/example.html" method="POST">
+                  <label for="fricks">How many fricks do you give?</label>
+                  <br>
+                  <input type="number" name="f" 
+                  id="fricks"
+                  step = "7"><br>
+                  If we wanted users to select a value within a certain range, we can change the type to "range" and assign "min" and "max" values. Heres an example form:
+                  <br>
+                  <form action="/example.html" method="POST">
+                    <label for="slider">How many fricks do you give?</label>
+                    <br>
+                    <input type="range" name="f" 
+                    id="slider"
+                    step = "7" min = "0" max = "70">
+                    </form>
+                    <br>
+                    If we want to make certain items selectable, we can make input elements with the type of "checkbox". They need an id to match the label, a name to make sure the data gets sent, and a value which is not visible on the form itself. Here's a form that includes some checkboxes:
+                    <br>
+                    <form>
+                      <p>Choose your ice cream toppings:</p>
+                      <label for="caramel">Caramel</label>
+                      <input id="caramel" name="topping" type="checkbox" value="caramel">
+                      <br>
+                      <label for="sprinkles">Sprinkles</label>
+                      <input id="sprinkles" name="topping" type="checkbox" value="sprinkles">
+                      <br>
+                      <label for="m&ms">M&Ms</label>
+                      <input id="m&ms" name="topping" type="checkbox" value="m&ms">
+                    </form>
+                    <br>
+                    If we want to make a form that has multiple options, but limit those options to one selection, we can use the type of "radio" for input. We can make this work with multiple radio inputs by setting the name for each input to the same. Heres an example:
+                    <br>
+                    <form>
+                      <p>What is 2+2?</p>
+                      <input type = "radio" id = "four" name = "answer" value = "4">
+                      <label of ="four">4</label>
+                      <br>
+                      <input type = "radio" id = "twentytwo" name = "answer" value = "22">
+                      <label for="twentytwo">22</label>
+                    </form>
+                    <br>
+                    If there is a list of options, radio buttons may not be the best choice. Instead, we can use
+                    <br>
+                    <em> < Select > </em>
+                    <br>
+                    tags in our form alongside
+                    <br>
+                    <em>< option ></em>
+                    <br>
+                    tags to make a drop down menu. Heres a way to code it up:
+                    <br>
+                    <em>< form >
+                      <br>
+                      < label for="lunch" >What's for lunch?< /label >
+                      <br>
+                      < select id="lunch" name="lunch"><br>
+                      &emsp < option value="pizza">Pizza< /option ><br>
+                        < option value="curry">Curry< /option ><br>
+                        < option value="salad">Salad< /option><br>
+                        < option value="ramen">Ramen< /option><br>
+                        < option value="tacos">Tacos< /option><br>
+                      < /select><br>
+                    < /form></em>
+                    <br>
+                    That code makes this:
+                    <br>
+                    <form>
+                      <label for="lunch">What's for lunch?</label>
+                      <select id="lunch" name="lunch">
+                        <option value="pizza">Pizza</option>
+                        <option value="curry">Curry</option>
+                        <option value="salad">Salad</option>
+                        <option value="ramen">Ramen</option>
+                        <option value="tacos">Tacos</option>
+                      </select>
+                    </form>
+                    <br>
+                    It may be troublesome for users to select something from the list if there are too many options. This can be avoided with the <br>
+                    <em> < datalist ></em>
+                    <br>
+                    tag. It's uses with the input tag (text as the type) and creates a text field that can be typed into and then select options from the datalist. The input has a list, and we set that list equal to the id of the datalist. Additonally, we use the < option > tags inside the datalist to add the values. Heres an example:
+                    <br>
+                    <form>
+                      <label for = "suns">Which suns player is the best?</label>
+                      <input type = "text" list = "sunsplayers" id = "suns" name = "suns">
+
+                      <datalist id = "sunsplayers">
+                        <option value = "Kevin Durant"></option>
+                        <option value = "Chris Paul"></option>
+                        <option value = "Devin Booker"></option>
+                        <option value = "Cam Payne"></option>
+                        <option value = "Deandre Ayton">                          </option>
+                        <option value = "Torrey Craig"></option>
+                        <option value = "Ish Wainright"></option>
+                      </datalist>
+                    </form>
+                    <br>
+                    input tags have their uses, but they are limited to a single row of data. If we want users to enter more than a single line, we could use the<br>
+                    <em> < textarea ></em>
+                    <br>
+                    tag. By tweaking the values of the attributes rows and cols, we can re size the textarea. Re sizing doesn't allow for more or fewer characters to be entered, as the text box can be re sized in the browser as well. Heres a 5x5 text area: <br>
+                    <form>
+                      <label for= "bob">Tell me how you feel...</label>
+                      <br>
+                      <textarea id = "bob name ="bob" rows ="5" cols = "5">enter the stuff here
+                      </textarea>
+                    </form>
+                    <br>
+                    The input type of submit can be used to make buttons that submit the form. Heres a basic one with a value of "Send that bih"
+                    <br>
+                    <form>
+                      <input type = "submit" value = "Send that bih">
+                    </form>
+                    <br>
+                    That's all about forms for today... Next we'll take a look at form validation...
+                  </p>
+                    <h4>What the site looks like today</h4>
+                    <img src = "dayfour.jpg" width="600" 
+                    height="300" />
+
+
+
+              </div>
+              <div id = dayfive>
+                <h3><em>April 9, 2023</em></h3>
+                <p>
+                  Today's lesson was about form validation. Valifation is the concept of checking user provided data against the required data. There are different types of validation, and one type is server side validation, which is where data is sent to another server for validation. This happens with a log in page, like when a form on the page accepts a username and password input, it needs to send the data to a server to check if that pair matches correctly. Aternatively, there is clent side validation, if we want to check the data <em>before</em> its sent to a server. This saves time from having to send information to the server, as well as protect the server from malicious code or data being sent that day. Additionally, feedback can be quickly given for the specific fields, rather than having the user have to re enter everything in the form if their data was rejected.
+                  A way to ensure there is information in a form before it is submitted, we could add the "required" attribute to an input element. This makes a little text box pop up... take a look!
+                  <br>
+                  <form>
+                    <label for="allergies">Do you have any dietary restrictions?</label>
+                    <br>
+                    <input id="allergies" name="allergies" type="text" required>
+                    <br>
+                    <input type="submit" value="Submit">
+                  </form>
+                  <br>
+                  Cool right? In addition to this we can make a little text box pop up if the input is of type "number" and we want them in a specific range. We can set specific "min" and "max" values. See what happens if you don't listen to what this says.
+                  <br>
+                  <form>
+                    <label for = "1to10">Enter a number 1-10</label>
+                    <input type = "number" name = "1to10" id = "1to10" min = "0" max = "10" step = "1">
+                  </form>
+                  <br>
+                  It's pretty insane.. I didn't ask it to display anything. See if the output changes if you enter a negative number as well.
+                  This min and max functionality can be spread to "text" type of inputs, but instead we affect the "minlength" and "maxlength" attributes. Lets see a text input with minlength of 5 and maxlength of 10.
+                  <br>
+                  <form>
+                    <label for="minmax">Share your thoughts</label>
+                    <input type ="text" id ="minmax" name = "minmax" minlength="5" maxlength="10">
+                  </form>
+                  <br>
+                  The final type of validation today is the pattern attribute. We can make sure that the input matces the regular expression. For example, for a 14-16 digit number, the regex for that would be <strong>[0-9]{14,16}</strong> and for things to only use letters and numbers, we can limit the regex to <strong>"[a-zA-Z0-9]+"</strong>
+                  That's all about client side validation today... Happy easter! Oh yes.. PS... I bombed the interview I talked about on day one... but we're not going to give up... and we are going to keep pushing and make the coolest website ever!
+                          </p>
+                          <h4>What the site looks like today</h4>
+                    <img src = "dayfive.jpg" width="600" 
+                    height="300" />
+                    </div>
+                          
+                          
               
 </body>
 </html>
