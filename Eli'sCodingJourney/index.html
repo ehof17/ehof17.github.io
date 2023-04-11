@@ -534,6 +534,143 @@ src="https://www.youtube.com/embed/MIhNXrOuX5A">
                     <img src = "dayfive.jpg" width="600" 
                     height="300" />
                     </div>
+                    <div id = "daysix">
+                      <h3><em>April 10, 2023</em></h3>
+                      <p>Today's lesson was the final part of the forms module, where we built a mad-libs inspired website. I don't want to copy the code over from codecademy (they provided the js and css) so here's my attempt at recreating it...</p>
+                      <form action = "/madlibs.html"method = "GET">
+                        <label for = "name-1">
+                          Enter a name:
+                        </label>
+                        <input required id = "name-1" name = "name-1">
+                        <br>
+                        <label for = "name-2">
+                          Enter another name:
+                        </label>
+                        <input required id = "name-2" name = "name-2">
+                        <br>
+                        <label for "verb">
+                          Enter a verb (ending in -ed):
+                        </label>
+                        <input required id = "verb" name = "verb">
+                        <br>
+                        <label for ="adj">
+                          Enter an adjective (ending in -ing):
+                        </label>
+                        <input required id = "adj" name ="adj">
+                        <br>
+                        <label for ="place">
+                          Enter the name of a place:
+                        </label>
+                        <input required id = "place" name ="place">
+                        <br>
+                        <label for ="adj2">
+                          Enter another adjective (ending in -ing):
+                        </label>
+                        <input required id = "adj2" name ="adj2">
+                        <br>
+                        <label for "num">Enter a number:</label>
+                        <input type = number required name = "num" id = "num">
+                        <br>
+                        <span>Yes or No:</span>
+                        <input type = "radio" required name = "answer" id = "yes" value="yes">
+                        <label for = "yes">
+                          Yes
+                        </label>
+                        <input type = "radio" required name = "answer" id = "no" value = "no">
+                        <label for = "no">
+                          No
+                        </label>
+                        <br>
+                        <label for = "speed">
+                          Select a relative speed:
+                        </label>
+                        <select id = "speed" name = "speed">
+                          <option value = "faster">
+                            Faster
+                          </option>
+                          <option value = "slower">
+                            Slower
+                          </option>
+                        </select> 
+                        <br>
+                        <label for = "motiv">
+                          Select or enter your own motivational Quote:
+                        </label>
+                        <input list = "motivationalquote" id = "motiv" name = "motiv">
+                        <datalist id = "motivationalquote">
+                          <option value = "Don't count your chickens before your eggs.."></option>
+                          <option value="The only way to do great work is to love what you do. - Steve Jobs"></option>
+<option value="Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill"></option>
+<option value="Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson"></option>
+<option value="The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela"></option>
+<option value="Don't watch the clock; do what it does. Keep going. - Sam Levenson"></option>
+<option value="Believe in your dreams and they may come true; believe in yourself and they will come true. - Unknown"></option>
+<option value="You miss 100% of the shots you don't take. - Wayne Gretzky"></option>
+<option value="The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt"></option>
+<option value="If you want to achieve greatness, stop asking for permission. - Unknown"></option>
+<option value="It does not matter how slowly you go as long as you do not stop. - Confucius"></option>
+                        </datalist> 
+                        <br>
+                        
+                        <input id = submit type = "submit">
+                      </form>
+                      <br>
+                      <p>
+                        It doesn't look as good as it did in codeacademy... however... this may change soon as there is only one more lesson in html and I will soon dive head first into css...
+                        <br>
+                        The first part of the semantic html lesson is regarding the
+                        <br>
+                        <em> < header ></em>
+                        <br>
+                        and 
+                        <br>
+                        <em> < nav ></em>
+                        <br>
+                        tags. Header tags are there to denote the heading, and nav tags are there to denote navigational links. It will make the code easier to read an decomposit as an outsider looking in. Instead of a bunch of div tags, we can organize a little better. There are more tags, like
+                        <br>
+                        <em> < main ></em>
+                        <br>
+                        and 
+                        <br>
+                        <em> < footer ></em>
+                        <br>
+                        tags, which are there to house the most important part of the website, and  things like Contact iformation, Copyright information, Terms of use, Site Map, and Reference to top of page links, respectively. Two more tags are
+                        <br>
+                        <em> < article ></em>
+                        <br>
+                        and
+                        <br>
+                        <em> < section > </em>
+                        <br>
+                        Article tags defines content that would make sense on its own. They can hold content such as articles, blogs, comments, magazines, etc. An article tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends. A section tag defines a part of the site that would fall under the same theme. This could be like chapters or headings. If something doesn't fit with either article or section tags, maybe the tag that it should use is 
+                        <br>
+                        <em> < aside ></em>
+                        <br>
+                        aside tags are used for Bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars, and additional information. Additionally, we can encapsulate media with
+                        <br>
+                        <em> < figure > </em>
+                        <br>
+                        tags and use 
+                        <br>
+                        <em> < figcaption ></em>
+                        <br>
+                        to caption the media. Another form of media we can use is audio. To do this, we can put a
+                        <br>
+                        <em>< source ></em>
+                        <br>
+                        tag inside opening and closing 
+                        <br>
+                        <em> < audio ></em>        
+                        <br>
+                        tags like this..
+                        <br>
+                        < audio><br>
+                          < source src="iAmAnAudioFile.mp3" type="audio/mp3"><br>
+                        < /audio>   <br>       
+                      </p>
+                      
+
+                    </div>
                           
                           
               
