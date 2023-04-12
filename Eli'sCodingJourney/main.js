@@ -30,7 +30,7 @@ function cleanAndCap(str) {
 
   <p><strong>${second}</strong> said <strong>${answer}</strong>, ${choice} and so they went on their first date to a steakhouse. But instead of dressing up in fancy clothes, they decided to wear silly outfits. <strong>${first}</strong> wore a cowboy hat and boots, while <strong>${second}</strong> wore a clown nose and rainbow suspenders. Everyone in the restaurant turned to look at them, but they didn't care. They were having too much fun.</p>
 
-  <p>As they continued to date, they discovered that they had a lot in common. They both lived in <strong>${place},</strong> and worked at chipotle for ${num1} hours a week. They even started to coordinate their Chipotle uniforms to match each other.</p>
+  <p>As they continued to date, they discovered that they had a lot in common. They both lived in <strong>${place},</strong> and worked at chipotle for <strong>${num1}</strong> hours a week. They even started to coordinate their Chipotle uniforms to match each other.</p>
 
   <p>One day, <strong>${first}</strong> suggested that they take a road trip to try different types of Mexican food. 'We could travel to the farlands and try the elusive Panchero's burrito', <strong>${first}</strong> said.</p>
 
@@ -45,7 +45,7 @@ function cleanAndCap(str) {
 
   <p><strong>${second}</strong> suggested they pull over and check it out. They found that a belt had come loose and needed to be tightened. Fortunately, <strong>${first}</strong> had a toolkit in the trunk and was able to fix it. As they continued their journey, they realized that even though they may have different opinions, they could always work together to overcome any obstacle.</p>
 
-  <p>And as the motivational quote goes, And for <strong>${first}</strong> and <strong>${second}</strong>, that meant loving each other with every bite of every burrito they shared.</p>`;
+  <p>And as the motivational quote goes,<strong>${motiv}</strong> And for <strong>${first}</strong> and <strong>${second}</strong>, that meant loving each other with every bite of every burrito they shared.</p>`;
 
 
   const storyEl = document.getElementById("story");
