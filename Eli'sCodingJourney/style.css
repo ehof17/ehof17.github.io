@@ -1,0 +1,25 @@
+#hover:hover{
+    color: red;
+}
+#link:visted{
+    background: red;
+}
+#active:active{
+color:red;
+}
+#disabled:disabled{
+    color:red;
+}
+#focus:focus{
+    color:red;
+}
+.emphasize{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+
+}
+.nav{
+ display:inline;
+
+}

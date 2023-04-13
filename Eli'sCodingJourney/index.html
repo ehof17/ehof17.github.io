@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eli's Coding Journey</title>
+    <link href = "style.css" rel = "stylesheet">
 </head>
 <body>
     <h1>Eli's Coding Journey</h1>
     <p>Hello, I am Elijah Hoffman and i am an aspiring web developer. I want to make <strong>cool</strong> things with code. I have some cool projects under my belt. The biggest project I made so far is either my fantasy fighting game in c++, or my online marketplace/shop in Java. Both of these were school projects. On the side, I made a web app called 'What happened today?' which displays the current time and an interesting fact that happend that day. The problem with these projects is that I can't really credit myself with creating them. The fantasy fighting game is pretty rough around the edges and is more of a press enter simulator than a game. For the java project, I copied code from my classwork and pasted it in the weekly homework. I truly had no idea about the concepts of it all and rushed it to get it done and get a solid grade. Finally, the web app is a modified tutorial on making a clock. The clock is ripped straight from the tutorial, and although I did use an API and added some things to the tutorial and changed some things around, it really is not mine. It wasn't until I started working on another project 'NBA guessing game' in which I found out that I really cannot create anything from the ground up. I feel as though I got stuck in the loop of comparing myself to others and wanting to create <strong>cool</strong> things I glossed over the fact that I have to make <strong>things</strong>. I purchased codecademy a while ago, and would rush through the lesson plans to see the progress bar go up, instead of trying to understand the concepts. So, I have humbled myself into restarting my progress on codecademy and am going to document this slow journey to help myself stay motivated and hopefully land a job.</p>
     </div>
+    <nav>
+      <a href = #dayone><h4>Day One</h4></a>
+      <a href = #daytwo><h4>Day Two</h4></a>
+      <a href = #daythree><h4>Day Three</h4></a>
+      <a href = #dayfour><h4>Day Four</h4></a>
+      <a href = #dayfive><h4>Day Five</h4></a>
+      <a href = #daysix><h4>Day Six</h4></a>
+      <a href = #dayseven><h4>Day Seven</h4></a>
+      <a href = #dayeight><h4>Day Eight</h4></a>
+
+      
+    </nav>
     <div id = dayone>
       <h3><em>April 3, 2023</em></h3>
       <p>This is the first day of something great. I started codecademy over again, and completed the 
@@ -689,6 +702,43 @@ src="https://www.youtube.com/embed/MIhNXrOuX5A">
       </p>
 
     </div>
+    <div id = "dayeight">
+      <h3><em>April 12, 2023</em></h3>
+      <p>
+        Continuing on the basics of css, I learned about pseudo-classes. A pseudo-class can be attached to any selector with a colon. Examples of pseudo-classes are:
+        <br>
+         <span id = 'hover'>:hover</span> <a href = '#dayeight' id = link>:visited</a><input name = "submit2" value = ":disabled" type = "submit" id = disabled><input name = "submit" value = ":active" type = "submit" id = active><input name = "submit3" value = ":focus" type = "submit" id = focus>
+         <br>
+         Additionally, I learned about specificity, which pretty much states that the most specific element in the css will override the less specific attributes. IE: ID->CLASS->TYPE
+         <br>
+         After this, I learned about chaining, which is when an element requires to have two or more css selectors at the same time. Css for special class for h1 elements can be selected by doing something like:
+         <br>
+         <span class = 'emphasize'>
+         h1.special {
+          <br>
+         }
+         </span>
+         <br>
+         Additionally, you can select elements that are nested within another, called descendants. For example, a list like this<br>
+         <span class = 'emphasize'>< ul class='main-list'><br>
+          &nbsp;&nbsp;&nbsp;< li> ... < /li><br>
+          &nbsp;&nbsp;&nbsp;< li> ... < /li><br>
+          &nbsp;&nbsp;&nbsp;< li> ... < /li><br>
+        < /ul></span>
+        <br>
+        The < li > elements are nested inside the < ul > element. So to select them, we can do something like this<br>
+        <span class = 'emphasize'>
+          .main-list li {
+            <br>
+          }
+        </span>
+        <br>
+        Finally, we can select multiple elements by separating them with a comma in css. This mitgates repeated code.
+
+
+        
+      </p>
+
 
                           
                           
