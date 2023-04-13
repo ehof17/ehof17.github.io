@@ -45,7 +45,7 @@ function cleanAndCap(str) {
 
   <p><strong>${second}</strong> suggested they pull over and check it out. They found that a belt had come loose and needed to be tightened. Fortunately, <strong>${first}</strong> had a toolkit in the trunk and was able to fix it. As they continued their journey, they realized that even though they may have different opinions, they could always work together to overcome any obstacle.</p>
 
-  <p>And as the motivational quote goes,<strong>${motiv}</strong> And for <strong>${first}</strong> and <strong>${second}</strong>, that meant loving each other with every bite of every burrito they shared.</p>`;
+  <p>And as the motivational quote goes,<strong>${quote}</strong> And for <strong>${first}</strong> and <strong>${second}</strong>, that meant loving each other with every bite of every burrito they shared.</p>`;
 
 
   const storyEl = document.getElementById("story");

@@ -20,6 +20,7 @@
       <a href = #daysix><h4>Day Six</h4></a>
       <a href = #dayseven><h4>Day Seven</h4></a>
       <a href = #dayeight><h4>Day Eight</h4></a>
+      <a href = #daynine><h4>Day Nine</h4></a>
 
       
     </nav>
@@ -734,10 +735,39 @@ src="https://www.youtube.com/embed/MIhNXrOuX5A">
         </span>
         <br>
         Finally, we can select multiple elements by separating them with a comma in css. This mitgates repeated code.
-
-
         
+        <br>
+        P.S.. I added a Nav bar today at the top of the screen to be able to jump to different days. I have high hopes with it.. but for now it looks like garbo in my opinion... I'm hoping to use css to make it somewhat tolerable...
       </p>
+      <img src = "navbar.jpg" width = 100 height = 300>
+      </div>
+      <div id = "daynine">
+        <h3><em>April 13,2023</em></h3>
+        <p>
+          Today I learned about visual rules in css. First speaking about font family. The font specified must be installed on the users computer or downloaded with the site. Web safe fonts are supported by most browsers and operating systems... Or you could use something like google fonts to use a font remotely. Fonts can be changed in size using the "font-size" and setting it to npx where n is the number of pixels. This is <span style = "font-size: 30px" >30px</span> pretty big right? Alternatively, we can set the font size to nvw, where n is the number of "viewport unit", meaning the font will get larger or smaller depending on the browser window. This is <span style = "font-size: 2.3vw">2.3vw</span> and notice how in a full screen window,they look similar sizes. re size the window and you'll see the true power of vw. Another way to style text with css is the "font-weight" property. <span>You could set it to <span style = "font-weight: lighter">lighter,</span></span> <span style = "font-weight: bold">bold,
+           or <span style = "font-weight: bolder">bolder</span>
+          </span>
+          or to an integer, where 400 is equal to normal, and 700 is equal to bold. To allign text to the parent element that holds it, we can set use the text-align property. Examples of the text align are:
+          </p>
+          <p style="text-align: right">Right</p>
+          <p style="text-align: left">Left</p>
+          <p style="text-align: center">Center</p>
+          <p>Setting the color makes the text color <span style = "color: seagreen">color: seagreen</span>, or if we want to add a little more color we could change the </p>
+          <p style = "background-color: seagreen;"> background-color: seagreen</p>
+          <p>Notice how the whole element is green, not just where the text is. We will get more into how to fix this later. Opacity is another way of changing text, and it's value can range from 0 or fully invisible, to 1, fully opaque. With values like <span style = "opacity: .2">.2</span> <span style = "opacity: .5">.5</span> and <span style = "opacity: .7">.7</span> inbetween. To make the background stand out, you could use change the background image property... lets see if you can guess this image.</p>
+          <p style = "background-image:url(
+            'https://images.unsplash.com/photo-1525382455947-f319bc05fb35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1796&q=80' 
+          ); color:aliceblue" >Hint: its white</p>
+          <p>If you guessed the panda picture from day 2.. you would be absolutely correct.<br>
+            The final part of the module spoke about !important tags, which can be placed after attributes in an html file to override any selector, no matter how specific it is. The next module talks about the box model in css.
+          </p>
+          <p>
+          The box model pretty much says that all elements on the webpage are living inside of a box. This is why when we set the background color to seagreen the entire screen became seagreen. This sliver of the screen was the box of that element. The content has a width and height, and this is surrounded by the padding (the amount of space between the content and the border), then the border (thickness and style of the border surrounding the content area and padding), then the margin (The amount of space between the border and the outside edge of the element). The height and width can be set to a px value or a vw value as well.
+        </p>
+        
+
+         
+      </div>
 
 
                           
