@@ -764,11 +764,68 @@ src="https://www.youtube.com/embed/MIhNXrOuX5A">
           <p>
           The box model pretty much says that all elements on the webpage are living inside of a box. This is why when we set the background color to seagreen the entire screen became seagreen. This sliver of the screen was the box of that element. The content has a width and height, and this is surrounded by the padding (the amount of space between the content and the border), then the border (thickness and style of the border surrounding the content area and padding), then the margin (The amount of space between the border and the outside edge of the element). The height and width can be set to a px value or a vw value as well.
         </p>
-        
-
-         
+                
       </div>
+<div id = "dayten">
+  <h3><em>April 14, 2023</em></h3>
+  <p>
+    We can see the effect of padding by taking two 50x50 elements, where one has a padding of 50px. The background color is set to red for both.
+    <p style = "position: relative; width:50px; height: 50px; background-color: red;">50x50</p>
+    <p style = "width:50px; height: 50px; padding: 50px; background-color: red">50x50 with 50px padding</p>
+    <p style = "width:50px; height: 50px; padding: 50px; background-color: red; margin: 50px">50x50 with 50 px padding and 20 px margin</p>
+    Adding the padding, we see that the element has some space inbetween. We also see that since the element is 50x50, the text is all messed up. When it comes to borders, they can be set to a specific width with a pixel number or keyword like this:
+    <p style = "width:70px; height: 50px;background-color: red;border: thin solid black">thin</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: medium solid black ">medium</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick solid black">thick</p>
+    Additionally, they can be set to 10 different types including:
+    <p style = "width:70px; height: 50px;background-color: red; border: thick none black">none</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick hidden black">hidden</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick dotted black">dotted</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick dashed black">dashed</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick solid black">solid</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick double black">double</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick groove black">groove</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick ridge black">ridge</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick inset black">inset</p>
+    <p style = "width:70px; height: 50px;background-color: red; border: thick outset black">outset</p>
+    The final property of the border is the color. If the width, style, or color are not set, then the browser displays the default value for that property: medium none color (where color is the current color of the element). If we don't like the current square shape and sharp edges of the border, we can change the border radius property to a number of pixels. This number would be the same curvature of a circle with a radius of that number. So to make a circle, you could change the border radius to 50% (instead of half the size which I find weird). Take these two circles of 100px x 100px. One has a radius of 50%, the other has 50px.
+    <p style = "width: 100px; height: 100px;background-color: red; border: thick solid black; border-radius: 50%; text-align: center; margin: 0 auto">50%</p>
+    <p style = "width: 100px; height: 100px;background-color: red; border: thick solid black; border-radius: 50px; text-align: center;">50px</p>
+    Padding can be changed in many ways, including changing the padding as a whole, or by changing pieces like padding-top or padding-right. Or... we could not do this at all and do shorthand by providing numerous values. Four values would go top, right, bottom, left. Three values would go top, left&right, bottom. And two values would be top&bottom, left&right. The margin means elements cannot come within x amount of pixels of that element's border. Additonally, margin can be used to center elements. Setting the margin to 0 auto sets the top and bottom margins to 0 pixels, and instructs the browser to adjust the left and right margins until the element is centered within its containing element. Additionally, a width mist be set, because the browser would automatically use the width of the whole screen, and this can change due to display and/or browser window size. Another important thing to note is that vertical margins collapse, while horizontal margins do not. These three elements have margins of 30 px.
+    <br>
+    <p style = "display: inline-block; width: 100px; height: 100px; margin: 50px; background-color: dodgerblue" > </p>
+    <p style = "display: inline-block; width: 100px; height: 100px; margin: 50px; background-color: dodgerblue" > </p>
+    <br>
+    <p style = "display: inline-block; width: 100px; height: 100px; margin: 50px 50px; background-color: dodgerblue" > </p>
+    Meaning that the effective distance for the left and right margins will be both the margins added together, and the top ando bottom margins just use the larger of the two values.
+    <br>
+    The size of windows change all the time, so the min/max-width and min/max height can make sure the changing window size does not break the box.
+    <br>
+    If we do break the box, ie have dimensions that go outside of its parent element, we can change the overflow property.
+    <p style = "overflow: scroll; width: 60px; height: 80px" >IF I PUT A LOT OF TEXT LIKE THIS IN A SMALL AREA I CAN SET IT TO SCROLL</p>
+    Other values include hidden:
+    <p style = "overflow: hidden; width: 60px; height: 80px" >IF I PUT A LOT OF TEXT LIKE THIS IN A SMALL AREA I CAN SET IT TO SCROLL</p>
+    and visible
+    <p style = "overflow: visible; width: 60px; height: 80px" >IF I PUT A LOT OF TEXT LIKE THIS IN A SMALL AREA I CAN SET IT TO SCROLL</p>
+    (  .                 .         This is the default value)
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Its good practice to set the default padding and margin to zero at the top of the css page... using *.
+    <br>
+    Finally, visibility can be set to hidden to hide an element while reserving space for it. Additionally setting the visiblity to visible will display the element, and collapse collapses an element.
+    <p style = "overflow: visible; width: 60px; height: 80px;visibility: collapse;" >IF I PUT A LOT OF TEXT LIKE THIS IN A SMALL AREA I CAN SET IT TO SCROLL</p>
+  
 
+
+
+  </p>
+</div>
 
                           
                           
