@@ -862,20 +862,41 @@ The topic today was display and positioning... First, there is a <br>
 float <br> property which determines how far left or right an element is positioned in its container. For this to work, the width of the containter must be specified. Common values of the float property include: <br>
 <div style = "width: 200px">
 <div style = "float: right">right
-</div>
-and
+</div> 
+
 <div style = "float: left">
 left</div>
+
+<div style = "clear:both; text-align: center;">
+  or</div>
 </div>
+
 Next, the display property determines the type of render for the element. The most common types are block, inline, and inline-block. Block elements take up the full width of the container, with line breaks above and below. Their height and width can be manually adjusted.<br> Inline elements take up as little space as possible and cannot have their height or width manually adjusted. They flow horizontally.<br> For the best of both worlds, inline-block elements can appear next to eachother horizontally and have their width and heights manually adjusted.
-<br> The clear property determines how an element should behave when it bumps into another one. It determines which sides floating elements are are allowed to float. By setting the clear to left, this means no elements inside the same container can float to the left of it. This means it will be sent to a new line..Other values of clear include right, none, and both.
-<br> The z-index property determines which element will be on 
+<br> The clear property determines how an element should behave when it bumps into another one. It determines which sides floating elements are are allowed to float. By setting the clear to left, this means no elements inside the same container can float to the left of it. This means it will be sent to a new line.Other values of clear include right, none, and both.
+<br> The z-index property determines which element will be on top of one another. The more positive the z integer, the more ahead of the others it will be.
+<br>
+The position of elements is important... The default value is static, but there are also values of relative, absolute, fixed, and sticky.
+<br>
+Relative postitoning displays things relative to its static position on the page. This can be combined with top, bottom, left, or right to move the elements away from the specified way. For example, top: 50px combined with an element with the postion of relative will move it 50 px down, or 50 px from it if it had the positon of static. A position that is similar to relative is absolute.<br>
+If an elements position is absolute, all other elements will ignore the element and act like its not present. It will be positioned relative to its closest positioned parent element, while the offset properties (top, bottom, left, right) are used to determine the final position from there. <br>
+Fixed position will keep the element in the same place, even as the user scrolls... this is commonly used for nav bars...
+<br>
+sticky elements will stay in the same place until it gets to its specified location.
+<br>
+<div style = "position: sticky; bottom: 0;
 
-
-
-
+background-color: khaki;
+">THIS IS STUCK WHAT THE FREAK</div>
+We can see that the banner was fixed on screen until it found its location right above. This element has the postition of sticky and the bottom value of 0.
+<br>
+Thats all for today...
+<br>
+Now I'm going surfing for the first time so that will probably be fun... Sophomore year is over and I am 0/37 when applying for internships, and 0/2 in interviews... surfs UP!!!!!!!!
 
 </p>
+
+
+
 
 </div>
 
