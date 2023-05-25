@@ -957,10 +957,37 @@ that's all for today.. The only thing to leave off with is that the four rules o
     <strong>Signifiers</strong> - These are aspects of an object that helps a user see the indicated potential and intended affordances of an object. A cup can be dranken out of, but a cup with a handle signifies that this should be dranken.<br>
     <strong>UX Patterns (User experience)</strong> - these establish reusable solutions to common problems. Handles on the cup are used elsewhere, and can help indicate because of previous experience.
     <br>
-    <strong></strong>
+    and apparently we ended with it too lol
   </p>
 
-</div>                          
+</div>   
+<div id = 'dayseventeen'>
+  <h3><em>May 24, 2023</em></h3>
+  <p>
+    This lesson started with the idea of primary vs secondary navigation. Primary navigation contains the most important links and buttons that should be displayed on every page of the site, where secondary navigation consists of a clickable list of pages that led to the current page. It's like a file directory... Codeacademy provides the example of a shop site with
+    <br>
+    Shopping -> Fashion -> Shoes -> Flats -> Brown ->
+    <br>
+    its also called breadcrumb navigation because of hansel and gretel and the fun story.
+    <br>
+    We are doing some crazy stuff over here when it comes to css. Lets say there is a list with the class of breadcrumb. We could select<br>
+    .breadcrumb li+li::before
+    <br>
+    and set the content property to ">" to place that inbetween all elements in the list.
+    <br>
+    the "+" is the adjacent sibling selector, so it will only select to li if they are immediately next to each other with the same parent. The ::before part creates a pseudo-element and is paired with the content property to add content right before the selected element.
+    <br>
+    The three major types of breadcrumbs are location, attribute, and path. Location is what we did for the first example, as everything to the right was located inside it to the left. The shoe's section is contained within the fashion section, which is contained within the shopping section.
+    <br>
+    Attribute based breadcrumbs are the next on the list. 'Flat' and 'Brown' fit into this list as there is no specific order... Not all brown shoes are flat and not all flat shoes are Brown
+    <br>
+    The final way bread crumbs are used is with a path like<br>
+    Home > about > register
+    <br>
+    Pretty much after this it says to not use breadcrumbs as the primary way to navigate a site because path based breadcrumbs are unique to the users journey... and if the breadcrumbs are already available in the primary navigation, then there is little reason to include them at all.
+
+  </p>
+</div>                       
                           
               
 </body>
