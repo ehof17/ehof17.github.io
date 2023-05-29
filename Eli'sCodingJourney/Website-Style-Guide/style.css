@@ -193,30 +193,54 @@ color: #E683A9FF;
   background-color:#F0E1B9FF;
   color: #FCF6F5FF;
 }
-.f1{
+.fone h4, .fone h5{
   font-family: 'Times New Roman', Times, serif;
-  color: red;
+  font-weight: normal;
+   
+  
+}
+.ftwo h4, .ftwo h5{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: normal;
 } 
+.font_3 h4, .font_3 h5{
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+}
+.font_4 h4, .font_4 h5{
+  font-weight: normal;
+  font-family: 'Nunito', sans-serif;
+}
+.font_5 h4, .font_5 h5{
+  font-family: 'Caveat', cursive;
+  font-weight: normal;
+  font-size: xx-large;
+}
+.font_6 h4, .font_6 h5{
+  font-family: 'Exo', sans-serif;
+  font-weight: normal;
+}
 .Font{
 display: inline-block;
 
 width: 32%;
 text-align: left;
-margin: 1px;
-min-height: 100px; 
+font-size:x-large;
+font-weight: normal;
+
 }
      
 .Name{
   text-decoration: underline;
 }
-.bold{
-  color: rebeccapurple;
-  font-weight: 900;
- 
+ h5.bold{
+
+  font-weight: bold;
+  font-weight: normal;
 }
 .italic{
-  color: #9ED9CCFF;
-  text-decoration:wavy;
+  
+  font-style: italic;
 }
 
 
