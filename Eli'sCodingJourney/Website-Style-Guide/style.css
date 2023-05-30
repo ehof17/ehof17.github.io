@@ -216,7 +216,7 @@ color: #E683A9FF;
   font-weight: normal;
   font-size: xx-large;
 }
-.font_6 h4, .font_6 h5{
+.font_6 h4, .font_6 h5, .font_6 li, .font_6 h1{
   font-family: 'Exo', sans-serif;
   font-weight: normal;
 }
@@ -234,14 +234,15 @@ font-weight: normal;
   text-decoration: underline;
 }
  h5.bold{
-
+ 
   font-weight: bold;
-  font-weight: normal;
+ 
 }
 .italic{
   
   font-style: italic;
 }
+
 
 
 

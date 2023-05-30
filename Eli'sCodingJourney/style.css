@@ -87,3 +87,6 @@ color:red;
     color: #fff;
   
 }
+ul{
+    display: inline-block;
+}
