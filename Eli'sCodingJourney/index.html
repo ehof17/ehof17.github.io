@@ -1082,6 +1082,168 @@ Black: Luxurious, powerful<br>
      It's the next day but I'm just adding to this day... my summer class started so I finished the homework for it and I thought why not just try and code some more today... It's not like I have to be up at 5 tomorrow morning.... oh wait...<br> I worked on refactoring some code on a website to use more tags than just ps. It was fun and I can def apply it to future projects...<br>
      I started the making a responsive website section, and it introduces to flexbox and grid for layout, positioning, and responsivenessm and using media queries. Exciting stuff. I've been using flex and had no idea what it meant at all... I just know its easy to center things with flex and grid.. but here I go...<br>
      The most common type of grid is a collumn grid which is like a newspaper. On a website, it has three major components. columns, gutters, and margins. Columns are the vertical sections that span the width of the page, commmonly 12 or 6. The gutters are the negative space inbetween and make sure that they don't run together. The margins are on the left and right of the grid, and ensure that the content of the designs don't match up to the edges of the browser window. Funky stuff can happen like making sure responsive design is held in place. A website can have 12 collumns on desktop, 6 columns on a tablet, and 3 columns on mobile to ensure usability.
+     <br>
+     Another new type of display is flex. Making the container a flex container is helpful because child elements of the container will change size and location in response to the size and position of their parent container. A div with the display value of flex will remain block level, however it will change the behavior of its child elements. check out this example: <br>
+     See what happens when you re size the page
+     <h3>Display: Flex</h3>
+     <div class='container' id='flex'>
+       <div class='box'>
+         <h4>1</h4>
+       </div>
+       <div class='box'>
+         <h4>2</h4>
+       </div>
+       <div class='box'>
+         <h4>3</h4>
+       </div>
+     </div>
+     <h3>Display: Block</h3>
+     <div class='container' id='block'>
+       <div class='box'>
+         <h4>1</h4>
+       </div>
+       <div class='box'>
+         <h4>2</h4>
+       </div>
+       <div class='box'>
+         <h4>3</h4>
+       </div>
+     </div>
+     We see that the box itself remains a block element. If we don't want this, we could use inline-flex to make flex boxes that are also inline elements.
+     <br>
+     <div class='container' id = 'inline-flex'>
+      <div class='box'>
+        <h3>1</h3>
+      </div>
+      <div class='box'>
+        <h3>2</h3>
+      </div>
+      <div class='box'>
+        <h3>3</h3>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='box'>
+        <h3>1</h3>
+      </div>
+      <div class='box'>
+        <h3>2</h3>
+      </div>
+      <div class='box'>
+        <h3>3</h3>
+      </div>
+    </div>
+    Also, if the children take up more width than the containers allow for, then the child divs will shrink in accordance with the container's size.
+    <br>
+    flex containers have properties like justify-content which can be set to many different values such as :
+    <br>
+    <div class='container flexstart'>
+      <div class='box'>
+        <h3>flex-start</h3>
+      </div>
+    </div>
+    to put all items positioned in order, starting from the left of the parent container, with no extra space between them.
+    <div class='container flexend'>
+      <div class='box'>
+        <h3>flex-end</h3>
+      </div>
+    </div>
+    to have all items positioned in order, with the last item starting on the right side of the parent container, with no extra space before or after them.
+    <div class='container center'>
+      <div class='box'>
+        <h3>center</h3>
+      </div>
+    </div>
+    to have all items positioned in order, in the center of the parent container with no extra spaces before, between, or after them
+    <div class='container spacearound'>
+      <div class='box'>
+        <h3>space-around</h3>
+      </div>
+      <div class='box'>
+        <h3>space-around</h3>
+      </div>
+      <div class='box'>
+        <h3>space-around</h3>
+      </div>
+      <div class='box'>
+        <h3>space-around</h3>
+      </div>
+    </div>
+    to have items positioned with equal space before and after each item, resulting in double the space between elements
+    <div class='container spacebetween'>
+      <div class='box'>
+        <h3>space-between</h3>
+      </div>
+      <div class='box'>
+        <h3>space-between</h3>
+      </div>
+      <div class='box'>
+        <h3>space-between</h3>
+      </div>
+      <div class='box'>
+        <h3>space-between</h3>
+      </div>
+    </div>
+    to have items positioned with equal space between them, but no extra space before the first or after the last element
+    <br>
+    Additonally, for aligning vertically, there is an allign-items property.
+    <div class='container flexstart2'>
+      <div class='box'>
+        <h3>flex-start</h3>
+      </div>
+    </div>
+    and 
+    <div class='container flexend2'>
+      <div class='box'>
+        <h3>flex-end</h3>
+      </div>
+    </div>
+    and 
+    <div class='container center2'>
+      <div class='box'>
+        <h3>center</h3>
+      </div>
+    </div>
+    work similarily to the justify-content, while there are some differenent properties like baseline where the bottom of the elements are lined up, 
+    <div class='container baseline2'>
+      <div class='box'>
+        
+      </div>
+      <div class='box' id = 'big-box'>
+        
+      </div>
+      <div class='box'>
+        
+      </div>
+      
+    </div>
+    and stretch, where it will stretch to fit the container if a min-height is specified or a height is not specified
+    <BR>
+    by default, flex items will not grow if the container is larger than necessary. This can change with the flex-grow property. You could set it to different values to have it grow more or less.
+    <div id='flex-growexample'>
+      <div class='bottom side1'>
+        <h2>1</h2>
+      </div>
+      <div class='bottom center'>
+        <h2>2</h2>
+      </div>
+      <div class='bottom side'>
+        <h2>0</h2>
+      </div>
+    </div> 
+    On the flip side of things, we can use the flex-shrink property to specify which elements will shrink and in what proportions. The default is 1, so by default, flex items do shrink but we can adjust this...
+    <div id='flex-shrinkexample'>
+      <div class='bottom2 sideshrink'>
+        <h2>0</h2>
+      </div>
+      <div class='bottom2 centershrink'>
+        <h2>1</h2>
+      </div>
+      <div class='bottom2 sideshrink1'>
+        <h2>2</h2>
+      </div>
+    </div> 
+   
   </p>
 </div>           
 </body>
