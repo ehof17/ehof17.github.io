@@ -162,14 +162,14 @@ flex-grow: 1;
 .bottom{
     width: 100px;
     height: 100px;
-    background-color: dodgerblue;
+    background-color: #ADEFD1FF;
     border: 2px solid lightgrey;
     margin: 10px 30px;
 }
 .bottom2{
     width: 200px;
     height: 100px;
-    background-color: dodgerblue;
+    background-color: #ADEFD1FF;
     border: 2px solid lightgrey;
     margin: 10px 30px;
 }
@@ -182,3 +182,16 @@ flex-grow: 1;
 .bottom2.sideshrink1 {
     flex-shrink: 2;
     }
+.container2{
+    background-color: #00203FFF;
+    display: flex;
+    align-items: center;
+    min-height: 125px;
+}  
+#wrap{
+    flex-wrap:wrap;
+}
+#wrap-reverse{
+    flex-wrap:wrap-reverse;
+    
+}  
