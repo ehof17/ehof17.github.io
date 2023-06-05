@@ -195,3 +195,41 @@ flex-grow: 1;
     flex-wrap:wrap-reverse;
     
 }  
+.container3 {
+    height: 300px;
+    width: 600px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .left,
+  .center,
+  .right {
+    min-height: 75px;
+    width: 200px;
+    margin: 2px;
+    background-color: dodgerblue;
+    border: 2px solid lightgrey;
+  }
+  
+  #flexstart {
+  align-content: flex-start;
+  }
+  
+  #flexend {
+  align-content: flex-end;
+  }
+  
+  #center3 {
+  align-content: center;
+  }
+  
+  #between {
+  align-content: space-between;
+  }
+  
+  #around {
+  align-content: space-around;
+  }
