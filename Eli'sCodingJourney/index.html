@@ -1378,7 +1378,55 @@ Black: Luxurious, powerful<br>
     </p>
   </div>    
   <div id = 'daytwentysix'>
-    
+    <h3><em>June 6, 2023</em></h3>
+    <p>
+      Ah what a wonderful day. I beat the wind temple in zelda and am ready to take on the day. Today I'm learning about CSS GRIDS!!!
+      <br>
+      Flexbox is useful in positioning in a one dimensional layout, whereas grid is useful for two dimensional layouts. A grid needs a grid container and grid items.
+      <br>
+      Below is a div with 7 divs inside it labeled a-g: 
+      Hover over it to see what happens when the container gets the display value of 'grid'
+      <br>
+      <div class="grid_1">
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div>
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+      </div>
+      we haven’t specified the number of rows or columns in our grid, so every item is sitting on a new row.<br>
+      To define the columns in our grid we could use the <br>
+      <strong>grid-template-columns:</strong><br>
+      property and add numbers (px or %, interchangededbly) and the amount of numbers will be the number of columns and the numbers themselves set the width of each column.
+      This may lead to overflow, for example lets set our grid template columns to 100px, 50%, and 200px:
+      <br>
+      <div class="grid_1" id = 'firstgrid'>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div>
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+      </div>
+      For rows, its the same idea. Rows percentages depend on the grid containers height, and columns depend on width. 
+      <br>
+      Lets add rows that are 40%, 50%, and 50px<br>
+      <div class="grid_1" id = 'secondgrid'>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div>
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+      </div>
+      We could also bring these together by using the <br>
+      <strong>grid-template:</strong><br>
+      and write the rows, a /, then the columns.
+    </p>
   </div>
 </body>
 

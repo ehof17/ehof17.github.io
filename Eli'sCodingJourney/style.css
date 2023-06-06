@@ -233,3 +233,29 @@ flex-grow: 1;
   #around {
   align-content: space-around;
   }
+  .grid_1 {
+    border: 2px blue solid;
+    width: 400px;
+    height: 500px;
+  
+  }
+  
+  .box_1 {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+    
+  }
+  .grid_1:hover{
+  display: grid;
+  }
+  #firstgrid{
+    display: grid;
+    grid-template-columns: 100px 50% 200px;
+  }
+  #secondgrid{
+    display: grid;
+    grid-template-columns: 100px 50% 200px;
+    grid-template-rows: 40% 50% 50px;
+  }
