@@ -1418,7 +1418,7 @@ Black: Luxurious, powerful<br>
         <div class="box_1 a">A</div>
         <div class="box_1 b">B</div>
         <div class="box_1 c">C</div>
-        <div class="box_1 d">D</div>
+        <div class="box_1 d">D</div> 
         <div class="box_1 e">E</div>
         <div class="box_1 f">F</div>
         <div class="box_1 g">G</div>
@@ -1426,6 +1426,117 @@ Black: Luxurious, powerful<br>
       We could also bring these together by using the <br>
       <strong>grid-template:</strong><br>
       and write the rows, a /, then the columns.
+      <br>
+      grid also introduces another unit<br>
+      <strong>fr</strong>
+      <br>
+      It stands for fraction, and it makes it easier to prevent the items from overflowing. When fr is used in combination with px and or %, the fr represents a fraction of the <em>available</em> space<br>
+      Lets make the middle column take 50% and see what happenes if the left and right columns take up 1fr a piece.
+      <div class="grid_1" id = 'thirdgrid'>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+      </div>
+      <br>
+      We see that if we put the two outer columns together it will be the width of the middle column.
+      <br>
+      There is also a repeat() function that takes two parameters (number of rows, and dimensions) and makes the amount of rows specified. If you do something funky like repeat(2, 20px 50px) 4 will be made where the first and third are 20px wide and the second and fourth are 50px wide. Lets see it in action here. I'll repeat the rows 3 times with a fraction of 1 then 4, and the columns 3 times with a fraction of 2 then 1.
+      <div class="grid_1" id = 'fourthgrid'>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+
+      </div>
+      <br>
+      Next, we have the
+      <br>
+      <strong>minmax()</strong>
+      <br>
+      function. It takes 2 numbers, first being the min and the second being the max size. Lets set the middle column to be between 600 and 300 px. We need the box to have no specifed width
+      <div class="grid_1_no_width" id = 'fifthgrid'>
+        <div class="box_1 a">A</div>
+        <div class="box_1 b">B</div>
+        <div class="box_1 c">C</div>
+        <div class="box_1 d">D</div> 
+        <div class="box_1 e">E</div>
+        <div class="box_1 f">F</div>
+        <div class="box_1 g">G</div>
+        </div>
+        <br>
+        Next, we can add gaps with column-gap:, row-gap, and gap: where the syntax is column-gap row-gap. There doesnt need to be a / between them. lets add a 20px gap between the rows and a 5px gap between the columns.
+        <br>
+        <div class="grid_1" id = 'sixthgrid'>
+          <div class="box_1 a">A</div>
+          <div class="box_1 b">B</div>
+          <div class="box_1 c">C</div>
+          <div class="box_1 d">D</div> 
+          <div class="box_1 e">E</div>
+          <div class="box_1 f">F</div>
+          <div class="box_1 g">G</div>
+        </div>
+        <br>
+        Thats fine and dandy but we have only been looking at the items placed in the grid taking up one square. We can change the size of grid items by manipulating parent and child elements and make things look crazy cool.
+        <br>
+        Using properties like grid-row-start: and grid-row-end on the items themselves will make the item take up the rows 1 and 2. Row grid lines start at 1 and end at 1 more than the amount of rows. A grid with 6 rows has a range between 1 and 7.
+        <br>
+        <strong>grid-row-start</strong>
+        <br>
+        Is the row you want it to start, And<br>
+        <strong>grid-row-end</strong><br>
+        is one greater than the row you want your grid item to end.<br>
+        We could also shorthand it with grid-row and specify the start / end.
+        <br>
+        grid-column works the same way.
+        <br>
+        Additionally, you could use span to start or end a col/row, relative to its other end.
+        <br>
+        grid-column: 4 / span 2
+        <br>
+        Will start in column 4 and span 2 columns of space, so in other words its the same as<br>
+        grid-column: 4 / 6
+        <br>
+        We can combine all of this together by using the <br>
+        <strong>grid-area</strong>
+        <br>
+        keyword. It takse the grid-row-start/grid-column-start / grid-row-end / grid-column-end
+
+       
     </p>
   </div>
 </body>

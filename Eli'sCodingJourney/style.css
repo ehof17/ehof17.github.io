@@ -259,3 +259,27 @@ flex-grow: 1;
     grid-template-columns: 100px 50% 200px;
     grid-template-rows: 40% 50% 50px;
   }
+  #thirdgrid{
+    display:grid;
+    grid-template: 1fr 50% 1fr / 1fr 50% 1fr;
+  }
+  #fourthgrid{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr 4fr);
+    grid-template-columns: repeat(3, 2fr 1fr);
+  }
+  .grid_1_no_width{
+    border: 2px blue solid;
+    
+    height: 500px;
+  
+  }
+  #fifthgrid{
+    display:grid;
+    grid-template: 1fr 50% 1fr / 1fr minmax(300px, 600px) 1fr;
+  }
+    #sixthgrid{
+        display:grid;
+        grid-template: 1fr 50% 1fr / 1fr 50% 1fr;
+        gap: 20px 5px;
+    }
