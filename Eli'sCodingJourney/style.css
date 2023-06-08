@@ -283,3 +283,6 @@ flex-grow: 1;
         grid-template: 1fr 50% 1fr / 1fr 50% 1fr;
         gap: 20px 5px;
     }
+ .code{
+    font-family: 'Press Start 2P', cursive;
+ }   
