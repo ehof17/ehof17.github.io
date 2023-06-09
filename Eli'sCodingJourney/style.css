@@ -283,6 +283,63 @@ flex-grow: 1;
         grid-template: 1fr 50% 1fr / 1fr 50% 1fr;
         gap: 20px 5px;
     }
- .code{
+.code{
+  
+
+}    
+ .code p{
     font-family: 'Press Start 2P', cursive;
- }   
+    border-radius: 3px;
+    border: 3px solid gray;
+ }
+ .boxbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .What-Happened-Box{
+    width: 500px;
+    height: 300px;
+    border: 3px solid aquamarine;
+    display:grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 5px;  
+ }
+ .WHTEXT{
+    background: slategray;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    font-size: 50px;
+    opacity: .8;
+    line-height: 100px;
+ }
+ .AMPM{
+    background-color: #4207af;
+ }
+ .born{
+    grid-column:1 / 5;
+    background-color: #4207af;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+ }
+ .Time{
+ 
+    
+ }
+ .Years{
+ font-size: 40px;
+ }
+ .ytd{
+    background-color: #4207af;
+    grid-column:2 / 5;
+    font-size: 40px;
+
+
+ }
+ .blurb{
+    grid-column:1 / 5;
+    font-size: 20px;
+    line-height: normal;
+ }

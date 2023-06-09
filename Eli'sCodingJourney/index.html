@@ -1545,15 +1545,96 @@ Black: Luxurious, powerful<br>
   <div id = 'daytwentyseven'>
     <h3><em>June 8, 2023</em></h3>
     <p>
-      grid-template-areas allows to name the sections used in the grid-row and column, start and end. Its declared on grid containers. An example of the css would look something like this.
+      grid-template-areas allows to name the sections used in the grid-row and column, start and end. Its declared on grid containers. An example of the HTML AND CSS would look something like this.
       <br>
       <div class = 'code'>
         <p>
-
+          div class="container"><br>
+            < header>Welcome!</ header><br>
+            < nav>Links!</ nav><br>
+            < section class="info">Info!< /section><br>
+            < section class="services">Services!</ section><br>
+            < footer>Contact us!</ footer><br>
+        < /div >
         </p>
+        <P>
+          .container { <br>
+            display: grid; <br>
+            max-width: 900px;<br>
+            position: relative;<br>
+            margin: auto;<br>
+            grid-template-areas: "header header"<br>
+                                 "nav nav" <br>
+                                 "info services"<br>
+                                 "footer footer";<br>
+            grid-template-rows: 300px 120px 800px 120px;<br>
+            grid-template-columns: 1fr 3fr; <br>
+          }<br>
+           
+          header {<br>
+            grid-area: header;<br>
+          } <br>
+           
+          nav {<br>
+            grid-area: nav;<br>
+          } <br>
+           
+          .info {<br>
+            grid-area: info;<br>
+          } <br>
+           
+          .services {<br>
+            grid-area: services;<br>
+          }<br>
+           
+          footer {<br>
+            grid-area: footer;<br>
+          } <br>
+        </P>
       </div>
+      The grid-template-areas creates a 2 col and 4 row layout, the grid-template rows and colums make the size, and the grid-area is used to tell the section to cover the specified portion.<br>
+      It's easy to overlap elements in grid, and its easiest to use the grid-area property with grid-row names.
+      <br>
+      ^This was written after my girlfriend woke me up with a sweet video of us and before we went to the lake with our dog. I thought I would be able to finish the lesson but there are more things to life than programming and I feel like I'm not as present as I need to be... that being said.. its 10:50 so I think I'll do some review today and try to recreate my big app, 'What Happened today' using grid. Preivously, I had no idea what grid or flex did but I used flex and had to make a lot of adjustments.
     </p>
+    <div class = 'boxbox'>
+    <div class = 'What-Happened-Box'>
+      <div class = "Time hours WHTEXT">
+        10
+      </div>
+      <div class = "Time minutes_ WHTEXT">
+        24
+      </div>
+      <div class = "Time seconds WHTEXT">
+        56
+      </div>
+      <div class = "Time AMPM WHTEXT">
+        AM
+      </div>
+      <div class = 'Years WHTEXT'>
+        234
+      </div>
+      <div class = 'ytd WHTEXT'>
+        years ago today,
+      </div>
+      <div class = 'blurb WHTEXT'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et eaque facere iusto architecto corrupti nostrum! Consequatur id corporis sapiente deserunt, at vitae obcaecati praesentium maxime rem officiis recusandae quam.
+      </div>
+      <div class = 'born'>
+        was born/died
+      </div>  
+    </div>
+    
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>
+    All in all, that took around 30 minutes (about 2 weeks faster than my original) and has way fewer lines of code that my original!
+  </p>
+  </div>
+  
 </body>
 
 </html>
