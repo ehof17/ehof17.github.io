@@ -1645,7 +1645,52 @@ Black: Luxurious, powerful<br>
       <br>
       is on the row / inline axis and
       takes in values such as start (aligns left), end (aligns right), center (center), and stretch(stretches the items to fill the grid area) 
+      <br>
+      Also, justify-content works as it has and accepts the same values.
+      <br>
+      <strong>align-items</strong>
+      <br>
+      works on the column axis, and aligns the items with the values like start, end, center, and stretch.
+      <br>
+      pair this with align-content to make things centered.
+      If the container is bigger than the rows, then there will be space inbeteen the content and the grid. There are new ways grid items can work, including the <br>
+      <strong>justify-self</strong>
+      <br>
+      property. It specifies how an element should position itself with respect to the row axis... It overrides justify-items. And is really similar to<br>
+      <strong>align-self</strong>
+      <br>
+      which overrides the align-items property and specifies how an element should position itself with respect to the column axis.
+      <br>
+      When we dont know how many items are gonna be in the grid, we can use an implicit grid. Rows will fill up, adding new rows as necessary. New grid rows will only be tall enough as the content inside, but we can change this default behavior.<br>
+      <strong>grid-auto-rows/columns</strong>
+      <br>
+      are what get this going. If we don't specify the size with these properties, then the rows/columns will just be as big as the content inside them. We can change new items to fill up in columns by changing the <br>
+      <strong>grid-auto-flow</strong>
+      <br> property to columns. Additionally, the dense keyword invokes an algorithm to attempt to fill holes earlier in the grid if smaller elements are added.
 
+    </p>
+  </div>
+  <div id = 'daytwentynine'>
+    <h3><em>June 11, 2023</em></h3>
+    <p>
+      Last night might be the last day at my job because I told a customer that I lose brain cells when I speak to him... That only gives me more motivation to succeed in this carrer...<br>
+      I began by learning about em, and how it used to be the width of the M in a typeface. Now 1 em is just the default font size. We can go  <span style = "font-size: 1em;">1em</span>  <span style = "font-size: 2em;">2em</span> <span style = "font-size: 3em;">3em</span> <span style = "font-size: 4em;">4</span> or do even more funky stuff with decimal places.
+      <br>
+      Next, rem which is root em, where it checks the root, or the html tag for its font size. For me, its the same size.
+      <br>
+      I also learned about using percentages to size non text elements that are inside something with a defined width and height. You could use this with text to ensure that text inside of something doesnt take less than its width to make it completley legible.<br>
+      Percentages can be used with margin and padding, and this is calculated with the parent elements width, not height.
+      <br>
+      Next, I learned about scaling background images with things like <br>
+      background-image: url('#');
+      <br>
+  background-repeat: no-repeat;
+  <br>
+  background-position: center;
+  <br>
+  background-size: cover;
+  <br>
+  thats pretty much it, i started a new project thats pushing my boundaries and am excited for it tho.. stay tuned.
     </p>
   </div>
   
