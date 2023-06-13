@@ -1,6 +1,9 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 #hover:hover{
     color: red;
 }
