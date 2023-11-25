@@ -1,0 +1,35 @@
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .temp {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .type {
+    text-align: right;
+    flex: 1;
+  }
+  
+  .nada {
+    flex: 1;
+  }
+  
+  .ghost {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #temp2 {
+    text-align: left;
+  }
+  
+  #type2 {
+    text-align: right;
+  }
+   

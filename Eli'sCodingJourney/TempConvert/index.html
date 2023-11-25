@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli's Temp Converter</title>
+    <link href = 'style.css' rel = stylesheet>
+</head>
+<body>
+    <div class = 'box'>
+        <form action = "/TempConvert/result.html"method = "GET">
+        <label for ="number">Enter the Temperature to be converted</label>
+        <br>
+        <input type = "number" name = "number" id = "number">
+        
+        <select name = "toconvert" id = "toconvert">
+            <option value = "Kelvin">Kelvin</option>
+            <option value = "Celcius">Celcius</option>
+            <option value = "Fahrenheit">Fahrenheit</option>
+        </select>
+        <br>
+        <br>
+        <label for = "converted">Convert to:</label>
+        <select name = "converted" id = "converted">
+            <option value = "Kelvin">Kelvin</option>
+            <option value = "Celcius">Celcius</option>
+            <option value = "Fahrenheit">Fahrenheit</option>
+        </select>
+        <br>
+        <br>
+        
+        <input type = "submit" name = "submit" value = "Convert" id = "convert">
+        <h4><a href = /index.html>back to original site</a></h4>
+    </div>
+
+</form>
+<h4><a href = /index.html>back to orignal site</a></h4>
+    
+</body>
+</html>
