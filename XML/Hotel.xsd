@@ -11,7 +11,7 @@
 <xsd:complexType name="HotelType">
     <xsd:sequence>
         <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-        <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
         <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
     <xsd:attribute name="Rating" type="xs:string" use="optional"/>
@@ -25,7 +25,13 @@
             <xsd:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/>
         </xsd:sequence>
-    <xsd:attribute name="NearestAirport" type="xs:string" use="required"/>
+<xsd:attribute name="NearestAirport" type="xs:string" use="required"/>
 
 </xsd:complexType>
+<xsd:simpleType name="PhoneType">
+    <xsd:restriction base="xsd:string">
+        <xsd:pattern value="\d{3}\-\d{3}-\d{4}"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
 <xsd:schema/>
