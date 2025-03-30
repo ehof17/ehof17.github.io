@@ -52,7 +52,7 @@
  <Hotel Rating="4.7">
     <Name>Hilton North Scottsdale at Cavasson</Name>
     <Phone>480-648-1500</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>7965</Number>
       <Street>E Cavasson Blvd</Street>
       <City>Scottsdale</City>
