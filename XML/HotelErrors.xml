@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- error 1: Root element name-->
 <Hotel>
-<!-- Todo: add the errors and stuff-->
   <Hotel Rating="4.2">
-    <Name>Westin</Name>
+  <!-- error 2 required attrubute missing -->
+    <!-- <Name>Westin</Name> -->
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -10,10 +13,161 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Phone>480-968-8885</Phone>
-    <Phone>800-937-8461</Phone>
+    
+  </Hotel>
+
+  <!-- 1-->
+    <Hotel Rating="4.6">
+    <Name>Arizona Biltmore</Name>
+    <!-- error 3 phone element missing-->
+    <!-- <Phone>602-955-6600</Phone> -->
+    <Address NearestAirport="Sky Harbor">
+      <Number>2400</Number>
+      <Street>E Missouri Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85016</Zip>
+    </Address>
+    
+  </Hotel>
+
+  <!-- 1 End-->
+
+<!-- 2-->
+ <Hotel Rating="4.4">
+    <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
+    <Phone>602-765-5800</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>4415</Number>
+      <Street>E Paradise Vlg Pkwy S</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85032</Zip>
+    <!-- error 4 no closing address tag-->
+    <!-- </Address> -->
+    
+  </Hotel>
+    
+<!-- 2 end-->
+
+<!-- 3-->
+ <Hotel Rating="4.7">
+ <!-- error 5 multiple name tags-->
+    <Name>Hilton North Scottsdale at Cavasson</Name>
+    <Name>Hilton Norther Scottsdale at Cavasson</Name>
+    <Phone>480-648-1500</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>7965</Number>
+      <Street>E Cavasson Blvd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85255</Zip>
+    </Address>
   </Hotel>
 
 
-  
-</Hotel>
+<!-- 3 end-->
+
+<!-- 4-->
+ <Hotel Rating="4.8">
+    <Name>Kasa Scottsdale Quarter Phoenix</Name>
+    <Phone>480-780-2132</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>15235</Number>
+      <Street>N 73rd St</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
+<!-- 4 end-->
+
+<!-- 5-->
+
+ <Hotel Rating="4.4">
+    <Name>Aiden by Best Western Scottsdale North</Name>
+    <Phone>480-314-1200</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>10801</Number>
+      <Street>N 89th Pl</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85260</Zip>
+    </Address>
+  </Hotel>
+
+<!-- 5 end-->
+    
+<!-- 6-->
+ <Hotel Rating="4.0">
+    <Name>Holiday Inn Express &amp; Suites</Name>
+    <Phone>480-473-3400</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>4575</Number>
+      <Street>E Irma Ln</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85050</Zip>
+    </Address>
+  </Hotel>
+<!-- 6 end-->
+<!-- 7-->
+ <Hotel Rating="4.2">
+    <Name>Cambria Hotel Phoenix - North Scottsdale</Name>
+    <Phone>480-480-7394</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>4425</Number>
+      <Street>E Irma Ln</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85050</Zip>
+    </Address>
+  </Hotel>
+<!-- 7 end-->
+    
+<!-- 8-->
+
+ <Hotel Rating="4.4">
+    <Name>Sleep Inn North Scottsdale</Name>
+    <Phone>480-998-9211</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>16630</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
+
+<!-- 8 end-->
+    
+<!-- 9-->
+ <Hotel Rating="3.7">
+    <Name>Hyatt Place Flagstaff</Name>
+    <Phone>928-433-6930</Phone>
+    <Address NearestAirport="Flagstaff Pulliam Airport">
+      <Number>397</Number>
+      <Street>S Malpais Ln</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
+<!-- 9 end-->
+    
+<!-- 10-->
+ <Hotel Rating="3.7">
+    <Name>Aiden by Best Western Flagstaff</Name>
+    <Phone>928-456-3050</Phone>
+    <Address NearestAirport="Flagstaff Pulliam Airport">
+      <Number>2000</Number>
+      <Street>S Milton Rd</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
+<!-- 10 end-->
+
+
+</Hotels>

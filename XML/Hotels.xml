@@ -98,8 +98,8 @@
     <Name>Holiday Inn Express &amp; Suites</Name>
     <Phone>480-473-3400</Phone>
     <Address NearestAirport="Sky Harbor">
-      <Number>10801</Number>
-      <Street>4575 E Irma Ln</Street>
+      <Number>4575</Number>
+      <Street>E Irma Ln</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85050</Zip>
@@ -107,30 +107,62 @@
   </Hotel>
 <!-- 6 end-->
 <!-- 7-->
- <Hotel Rating="4.0">
+ <Hotel Rating="4.2">
     <Name>Cambria Hotel Phoenix - North Scottsdale</Name>
-    <Phone>480-473-3400</Phone>
+    <Phone>480-480-7394</Phone>
     <Address NearestAirport="Sky Harbor">
-      <Number>10801</Number>
-      <Street>4575 E Irma Ln</Street>
+      <Number>4425</Number>
+      <Street>E Irma Ln</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85050</Zip>
     </Address>
   </Hotel>
-
-
 <!-- 7 end-->
     
 <!-- 8-->
+
+ <Hotel Rating="4.4">
+    <Name>Sleep Inn North Scottsdale</Name>
+    <Phone>480-998-9211</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>16630</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
+
 <!-- 8 end-->
     
 <!-- 9-->
+ <Hotel Rating="3.7">
+    <Name>Hyatt Place Flagstaff</Name>
+    <Phone>928-433-6930</Phone>
+    <Address NearestAirport="Flagstaff Pulliam Airport">
+      <Number>397</Number>
+      <Street>S Malpais Ln</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
 <!-- 9 end-->
     
 <!-- 10-->
+ <Hotel Rating="3.7">
+    <Name>Aiden by Best Western Flagstaff</Name>
+    <Phone>928-456-3050</Phone>
+    <Address NearestAirport="Flagstaff Pulliam Airport">
+      <Number>2000</Number>
+      <Street>S Milton Rd</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
 <!-- 10 end-->
-
 
 
 </Hotels>
