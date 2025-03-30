@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://ehof17.github.io/XML" targetNamespace="https://ehof17.github.io/XML" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://ehof17.github.io/XML" targetNamespace="https://ehof17.github.io/XML" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xsd:element name="Hotels" type="HotelsType" />
 
     <xsd:complexType name="HotelsType">
@@ -14,18 +14,18 @@
         <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
         <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
-    <xsd:attribute name="Rating" type="xs:string" use="optional"/>
+    <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
 </xsd:complexType>
 
 <xsd:complexType name="AddressType">
         <xsd:sequence>
-            <xsd:element name="Number" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            <xsd:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            <xsd:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            <xsd:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            <xsd:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Number" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="Zip" type="xsd:string" minOccurs="1" maxOccurs="1"/>
         </xsd:sequence>
-<xsd:attribute name="NearestAirport" type="xs:string" use="required"/>
+<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
 
 </xsd:complexType>
 <xsd:simpleType name="PhoneType">
