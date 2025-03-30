@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels>
+<Hotels
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
 <!-- Provided hotel -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
@@ -7,7 +9,7 @@
     <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
-      <Street>E. 7th St</Street>
+      <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
@@ -49,7 +51,7 @@
 <!-- 2 end-->
 
 <!-- 3-->
- <Hotel Rating="4.7">
+ <Hotel>
     <Name>Hilton North Scottsdale at Cavasson</Name>
     <Phone>480-648-1500</Phone>
     <Address NearestAirport="Sky Harbor">
