@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels
-xsi:noNamespaceSchemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
+<Hotels>
 <!-- Provided hotel -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
