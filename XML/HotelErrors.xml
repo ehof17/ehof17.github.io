@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- error 1: Root element name-->
-<Hotel>
+<Hotel
+  xmlns="https://ehof17.github.io/XML"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
   <Hotel Rating="4.2">
   <!-- error 2 required attrubute missing -->
     <!-- <Name>Westin</Name> -->
