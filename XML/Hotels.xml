@@ -48,9 +48,8 @@
 <!-- 2 end-->
 
 <!-- 3-->
-
  <Hotel Rating="4.7">
-    <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
+    <Name>Hilton North Scottsdale at Cavasson</Name>
     <Phone>480-648-1500</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>7965</Number>
@@ -59,23 +58,67 @@
       <State>AZ</State>
       <Zip>85255</Zip>
     </Address>
-   
   </Hotel>
 
 
 <!-- 3 end-->
 
 <!-- 4-->
+ <Hotel Rating="4.8">
+    <Name>Kasa Scottsdale Quarter Phoenix</Name>
+    <Phone>480-780-2132</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>15235</Number>
+      <Street>N 73rd St</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
 <!-- 4 end-->
 
 <!-- 5-->
+
+ <Hotel Rating="4.4">
+    <Name>Aiden by Best Western Scottsdale North</Name>
+    <Phone>480-314-1200</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>10801</Number>
+      <Street>N 89th Pl</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85260</Zip>
+    </Address>
+  </Hotel>
+
 <!-- 5 end-->
     
 <!-- 6-->
-
+ <Hotel Rating="4.0">
+    <Name>Holiday Inn Express &amp; Suites</Name>
+    <Phone>480-473-3400</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>10801</Number>
+      <Street>4575 E Irma Ln</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85050</Zip>
+    </Address>
+  </Hotel>
 <!-- 6 end-->
-    
 <!-- 7-->
+ <Hotel Rating="4.0">
+    <Name>Cambria Hotel Phoenix - North Scottsdale</Name>
+    <Phone>480-473-3400</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>10801</Number>
+      <Street>4575 E Irma Ln</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85050</Zip>
+    </Address>
+  </Hotel>
+
 
 <!-- 7 end-->
     
