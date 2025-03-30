@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
+<!-- Provided hotel -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -9,8 +12,82 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Phone>480-968-8885</Phone>
-    <Phone>800-937-8461</Phone>
+    
   </Hotel>
+
+  <!-- 1-->
+    <Hotel Rating="4.6">
+    <Name>Arizona Biltmore</Name>
+    <Phone>602-955-6600</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2400</Number>
+      <Street>E Missouri Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85016</Zip>
+    </Address>
+    
+  </Hotel>
+
+  <!-- 1 End-->
+
+<!-- 2-->
+ <Hotel Rating="4.4">
+    <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
+    <Phone>602-765-5800</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>4415</Number>
+      <Street>E Paradise Vlg Pkwy S</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85032</Zip>
+    </Address>
+    
+  </Hotel>
+    
+<!-- 2 end-->
+
+<!-- 3-->
+
+ <Hotel Rating="4.7">
+    <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
+    <Phone>480-648-1500</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>7965</Number>
+      <Street>E Cavasson Blvd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85255</Zip>
+    </Address>
+   
+  </Hotel>
+
+
+<!-- 3 end-->
+
+<!-- 4-->
+<!-- 4 end-->
+
+<!-- 5-->
+<!-- 5 end-->
+    
+<!-- 6-->
+
+<!-- 6 end-->
+    
+<!-- 7-->
+
+<!-- 7 end-->
+    
+<!-- 8-->
+<!-- 8 end-->
+    
+<!-- 9-->
+<!-- 9 end-->
+    
+<!-- 10-->
+<!-- 10 end-->
+
+
 
 </Hotels>
