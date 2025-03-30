@@ -16,7 +16,7 @@
   </Hotel>
 
   <!-- 1-->
-    <Hotel Rating="4.6">
+    <Hotel>
     <Name>Arizona Biltmore</Name>
     <Phone>602-955-6600</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -32,8 +32,9 @@
   <!-- 1 End-->
 
 <!-- 2-->
- <Hotel Rating="4.4">
+ <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
+    <Phone>602-765-5800</Phone>
     <Phone>602-765-5800</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>4415</Number>
