@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels
+  xmlns="https://ehof17.github.io/XML"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
+  xsi:schemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
 <!-- Provided hotel -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
