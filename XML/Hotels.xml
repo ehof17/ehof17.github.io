@@ -36,7 +36,7 @@
     <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
     <Phone>602-765-5800</Phone>
     <Phone>602-765-5801</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>4415</Number>
       <Street>E Paradise Vlg Pkwy S</Street>
       <City>Phoenix</City>
