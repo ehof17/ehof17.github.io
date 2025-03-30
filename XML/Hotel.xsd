@@ -15,9 +15,10 @@
                     <xs:element name="City" type="xs:string"/>
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
-                    <xs:attribute name="NearestAirport" type="xs:string" use="required"/>    
+                    
                   </xs:sequence>
-                
+                <!-- Moved attribute outside the sequence-->
+                 <xs:attribute name="NearestAirport" type="xs:string" use="required"/>    
                 </xs:complexType>
               </xs:element>
               <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
