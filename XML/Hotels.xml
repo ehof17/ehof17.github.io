@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels
- xsi:noNamespaceSchemaLocation="https://ehof17.github.io/XML/Hotel.xsd">
+<Hotels>
 <!-- Provided hotel -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
@@ -36,8 +35,8 @@
  <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Scottsdale</Name>
     <Phone>602-765-5800</Phone>
-    <Phone>602-765-5800</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Phone>602-765-5801</Phone>
+    <Address>
       <Number>4415</Number>
       <Street>E Paradise Vlg Pkwy S</Street>
       <City>Phoenix</City>
@@ -53,7 +52,7 @@
  <Hotel Rating="4.7">
     <Name>Hilton North Scottsdale at Cavasson</Name>
     <Phone>480-648-1500</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address>
       <Number>7965</Number>
       <Street>E Cavasson Blvd</Street>
       <City>Scottsdale</City>
