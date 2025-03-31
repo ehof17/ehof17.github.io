@@ -82,7 +82,7 @@
       <State>AZ</State>
       <Zip>85254</Zip>
         <!-- error 4 no closing address tag-->
-   <!-- </Address> -->
+    </Address>
   </Hotel>
 <!-- 4 end-->
 
