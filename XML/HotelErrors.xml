@@ -46,8 +46,8 @@
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85032</Zip>
-    <!-- error 4 no closing address tag-->
-    <!-- </Address> -->
+  
+     </Address>
     
   </Hotel>
     
@@ -81,7 +81,8 @@
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85254</Zip>
-    </Address>
+        <!-- error 4 no closing address tag-->
+   <!-- </Address> -->
   </Hotel>
 <!-- 4 end-->
 
